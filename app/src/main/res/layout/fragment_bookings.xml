@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context=".View.Bookings.BookingsFragment">
+
+
+    <EditText
+        android:id="@+id/search_date"
+        android:layout_width="323dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/search_view_background"
+
+        android:drawableLeft="@drawable/quantum_ic_search_grey600_24"
+        android:elevation="5dp"
+        android:hint="Search Date"
+        android:inputType="none"
+        android:drawableRight="@drawable/ic_baseline_cancel_24"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/reservation_recycleview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Your Reservations"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintEnd_toStartOf="@+id/num_reservations"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/num_reservations"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:text="0"
+        android:textColor="@color/colorwhite"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/user_background"
+        app:layout_constraintBottom_toTopOf="@+id/search_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="216dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/opensans_light"
+        android:text="Manage your upcoming reservations to view rentals."
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/search_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reservation_recycleview"
+        android:layout_width="406dp"
+        android:layout_height="464dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/home_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

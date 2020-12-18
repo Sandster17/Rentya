@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1023510112271",
+    "firebase_url": "https://rentya-43a23.firebaseio.com",
+    "project_id": "rentya-43a23",
+    "storage_bucket": "rentya-43a23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023510112271:android:3f5138f04a6f6b4abd9b7a",
+        "android_client_info": {
+          "package_name": "com.partypanda.partyrent.rentya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023510112271-41f2dcr2k04btt1bdj0ljbe8aglji302.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.partypanda.partyrent.rentya",
+            "certificate_hash": "91f67b1c8e4121d239c9ed1636558e1f61311810"
+          }
+        },
+        {
+          "client_id": "1023510112271-fo70ldri7ofc3ghes5hh4movhnck26u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoNB2sPe_6Z74QR9q6sx8G0SOGu3YPjbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023510112271-fo70ldri7ofc3ghes5hh4movhnck26u1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

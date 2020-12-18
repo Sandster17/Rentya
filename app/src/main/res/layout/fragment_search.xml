@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Search.SearchFragment">
+
+    <Button
+        android:id="@+id/search_home"
+        android:layout_width="209dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/button_design"
+        android:text="Search"
+        android:textColor="@color/colorwhite"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_friends"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search_friends"
+        android:layout_width="374dp"
+        android:layout_height="467dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/home_design"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/apartment_min"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/user_background"
+            android:hint="Min value"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/listing_University"
+            app:layout_constraintEnd_toStartOf="@+id/apartment_max"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/apartment_max"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/user_background"
+            android:hint="Max value"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/listing_metro_station"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/apartment_min" />
+
+        <Spinner
+            android:id="@+id/apartment_term"
+            android:layout_width="146dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/user_background"
+            app:layout_constraintBottom_toTopOf="@+id/apartment_max"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/apartment_type" />
+
+        <Spinner
+            android:id="@+id/apartment_people"
+            android:layout_width="146dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/user_background"
+            app:layout_constraintBottom_toTopOf="@+id/apartment_term"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/apartment_type"
+            android:layout_width="146dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/user_background"
+            app:layout_constraintBottom_toTopOf="@+id/apartment_min"
+            app:layout_constraintEnd_toStartOf="@+id/apartment_term"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Spinner
+            android:id="@+id/listing_metro_station"
+            android:layout_width="160dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/user_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Spinner
+            android:id="@+id/listing_University"
+            android:layout_width="175dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/user_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/listing_metro_station" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="84dp"
+            android:background="@drawable/search"
+            app:layout_constraintBottom_toTopOf="@+id/apartment_people"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="254dp"
+            android:layout_height="116dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Search for your new long or short term stay in kyiv"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/apartment_people"
+            app:layout_constraintEnd_toStartOf="@+id/textView12"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_baseline_help_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listing_metro_station"
+            app:layout_constraintVertical_bias="0.813" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="406dp"
+        android:layout_height="175dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/apartment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:text="Apartment in kyiv" />
+
+        <TextView
+            android:id="@+id/apartment_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="370dp"
+            android:layout_marginTop="10dp"
+            android:text="Edit"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/apartment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Apartment Near Golden Domes - 2"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/apartment_description"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="70dp"
+            android:text="13 guests-12 Rooms- 12 baths" />
+
+        <TextView
+            android:id="@+id/apartment_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/ic_baseline_delete_24" />
+
+        <TextView
+            android:id="@+id/apartment_stars"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="100dp"
+            android:drawableStart="@drawable/ic_baseline_star_24"
+            android:text="4.3(33)"
+            android:textColor="@color/colorBlack" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="115dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/theme_shape"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/apartment_profile"
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                android:scaleType="centerCrop"></ImageView>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

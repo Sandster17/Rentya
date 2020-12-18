@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context=".View.Preview.Preview">
+
+    <Button
+        android:id="@+id/reserve"
+        android:layout_width="157dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_design"
+        android:text="Reserve"
+        android:textColor="@color/colorwhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/listing_fee"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="514dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/listing_fee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Button
+                android:id="@+id/google_map_direct"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="287dp"
+                android:background="@drawable/google_maps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/apartment_address"
+                app:layout_constraintTop_toTopOf="@+id/listing_about" />
+
+            <TextView
+                android:id="@+id/apartment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/opensans_bold"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                android:text="Apartment Near Golden Domes - 2"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/apartment_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/apartment_description"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                android:text="*13 guests-12 Rooms- 12 baths"
+                app:layout_constraintBottom_toTopOf="@+id/apartment_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/apartment_location"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                android:text="*metro shuliyiavsa-university Aviation"
+                app:layout_constraintBottom_toTopOf="@+id/listing_images"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.092"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/apartment_type"
+                android:layout_width="wrap_content"
+
+                android:layout_height="20dp"
+                android:layout_marginBottom="4dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Apartment in kyiv"
+                app:layout_constraintBottom_toTopOf="@+id/apartment_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/listing_about"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/listing_about"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="580dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="New modern one-bedroom apartment with the hi-tech unique designer styled luxury renovation in grey and yellow colors combined with the different unique beautiful designer's ideas. There is a huge king-size bed, big comfortable sofa which can be transformed into another double sleeping place, big embedded wardrobe with mirror doors.
+Fully equipped kitchen is separated from the room by the bar-table with modern bar-chairs and it amazes with it's hi-tech grey and yellow elements in the furniture. It has everything for cooking of your favorite meals.
+The luxury modern bathroom made from modern mozaic tiles in grey and gold colors has a Jacuzzi bath-tub, shower, wash-basin with a big mirror in front of it and a w.c. There is also a laundry washer in the apartment."
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.737"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/view_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="contact host"
+                app:layout_constraintBottom_toTopOf="@+id/apartment_type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.924"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_baseline_cancel_24"
+                app:layout_constraintBottom_toTopOf="@+id/apartment_type"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.17" />
+
+            <TextView
+                android:id="@+id/apartment_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="292dp"
+                android:drawableStart="@drawable/ic_baseline_add_location_24"
+                android:text="Address"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toStartOf="@+id/google_map_direct"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/listing_about" />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/listing_images"
+                android:layout_width="343dp"
+                android:layout_height="243dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView22"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.426"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/host_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user"
+                app:layout_constraintBottom_toTopOf="@+id/view_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.891"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.307" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/apartment_stars"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginBottom="51dp"
+        android:drawableStart="@drawable/ic_baseline_star_24"
+        android:text="4.3(33)"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reserve"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/listing_fee"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="12000uah/month"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/apartment_stars"
+        app:layout_constraintEnd_toStartOf="@+id/reserve"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

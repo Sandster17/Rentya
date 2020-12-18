@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context=".View.RentApartment.ListApartmentDescription">
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="157dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_design"
+        android:text="Continue"
+        android:textColor="@color/colorwhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/error_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="344dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:drawableStart="@drawable/ic_baseline_error_24"
+        android:gravity="center_vertical"
+        android:text="There has been an error.Please make sure all fields have been filled in!"
+        android:textColor="@color/error_color"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="411dp"
+        android:layout_height="444dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar3">
+
+
+        <CheckBox
+            android:id="@+id/listing_renovated"
+            android:layout_width="183dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/user_background"
+            android:hint="Recently Renovated?"
+            app:layout_constraintBottom_toTopOf="@+id/listing_University"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/listing_description"
+            android:layout_width="310dp"
+            android:layout_height="100dp"
+            android:background="@drawable/user_background"
+            android:hint="Description( Please be descriptive of what you are renting out and be aware that your descriptions is extremely important"
+
+            android:paddingStart="22dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/listing_rooms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listing_title"
+            app:layout_constraintVertical_bias="0.68" />
+
+        <EditText
+            android:id="@+id/listing_title"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/user_background"
+            android:hint="Title (Maximum 15 characters)"
+            android:inputType="text"
+            android:paddingStart="22dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/listing_bathrooms"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/user_background"
+            android:hint="Bathrooms"
+            android:inputType="none"
+            android:paddingStart="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/listing_renovated"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/listing_rooms"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/user_background"
+            android:hint="Rooms"
+            android:inputType="none"
+            android:paddingStart="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/listing_bathrooms"
+            app:layout_constraintEnd_toStartOf="@+id/add_rooms" />
+
+        <Spinner
+            android:id="@+id/listing_metro_station"
+            android:layout_width="160dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/user_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Spinner
+            android:id="@+id/listing_University"
+            android:layout_width="175dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/user_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/listing_metro_station" />
+
+        <TextView
+            android:id="@+id/add_rooms"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/ic_baseline_add_circle_2"
+            app:layout_constraintBottom_toTopOf="@+id/add_bathrooms"
+            app:layout_constraintEnd_toStartOf="@+id/remove_rooms" />
+
+        <TextView
+            android:id="@+id/remove_rooms"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/ic_baseline_remove_circle_24"
+            app:layout_constraintBottom_toTopOf="@+id/remove_bathrooms"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/add_bathrooms"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/ic_baseline_add_circle_2"
+            app:layout_constraintBottom_toTopOf="@+id/listing_renovated"
+            app:layout_constraintEnd_toStartOf="@+id/remove_bathrooms"
+            app:layout_constraintHorizontal_bias="0.622"
+            app:layout_constraintStart_toEndOf="@+id/listing_bathrooms" />
+
+        <TextView
+            android:id="@+id/remove_bathrooms"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/ic_baseline_remove_circle_24"
+            app:layout_constraintBottom_toTopOf="@+id/listing_renovated"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_baseline_help_24" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:text="Step 2"
+            android:textColor="@color/colorBlack"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_baseline_arrow_back_24" />" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.partypanda.partyrent.rentya.MainActivity">
+   <item
+    android:id="@+id/nav_home"
+    android:title=""
+    android:icon="@drawable/ic_baseline_home_24"
+    >
+</item>
+    <item
+        android:id="@+id/nav_search"
+        android:title=""
+        android:icon="@drawable/ic_baseline_search_24"
+
+        >
+    </item>
+
+    <item
+        android:id="@+id/nav_bookings"
+        android:title=""
+        android:icon="@drawable/ic_baseline_library_books_24"
+        >
+    </item>
+    <item
+        android:id="@+id/nav_favourite"
+        android:title=""
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        >
+    </item>
+</menu>
